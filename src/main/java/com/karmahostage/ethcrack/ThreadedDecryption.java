@@ -18,7 +18,8 @@ public class ThreadedDecryption implements Runnable {
 
     @Override
     public void run() {
-        boolean correctKey = keyDecrypter.isCorrectKey(ethKeystore, password);
+        boolean correctKey;
+        correctKey = keyDecrypter.isCorrectKey(ethKeystore, password);
         System.out.println(password);
         if (correctKey) {
             System.out.println("key found: " + password);
