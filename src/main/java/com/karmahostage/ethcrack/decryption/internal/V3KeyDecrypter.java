@@ -6,8 +6,6 @@ import com.lambdaworks.crypto.PBKDF;
 import com.lambdaworks.crypto.SCrypt;
 import org.bouncycastle.jcajce.provider.digest.SHA3;
 import org.bouncycastle.util.encoders.Hex;
-
-import javax.crypto.Mac;
 import java.security.GeneralSecurityException;
 import java.util.Arrays;
 

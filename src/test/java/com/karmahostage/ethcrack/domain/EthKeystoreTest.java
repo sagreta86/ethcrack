@@ -16,5 +16,4 @@ public class EthKeystoreTest {
         EthKeystore ethKeystore = new Gson().getAdapter(EthKeystore.class).fromJson(actualFileAsReader);
         assertThat(ethKeystore).isNotNull();
     }
-
 }
