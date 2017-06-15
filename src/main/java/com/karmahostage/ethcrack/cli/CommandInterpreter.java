@@ -18,8 +18,13 @@ public class CommandInterpreter {
 
     private ExecutorService executorService;
 
+
+
     public CommandInterpreter() {
-        this.executorService = Executors.newFixedThreadPool(16);
+        int cores = Runtime.getRuntime().availableProcessors();
+        System.out.println("Number of cores present: " + cores);
+        System.out.println("Using number of threads: " + cores/2);
+        this.executorService = Executors.newFixedThreadPool(cores/2);
     }
 
     public void interpret(String[] args) {
